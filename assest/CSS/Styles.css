@@ -1,0 +1,298 @@
+/* Font Faces */
+@font-face {
+    font-family: E-font-Arciform;
+    src: url(../Fonts/English/Arciform.otf);
+}
+
+@font-face {
+    font-family: iranSans;
+    src: url(../Fonts/Iran_Sans/IRANSansX-Regular.woff);
+}
+
+@font-face {
+    font-family: iranSharpNoen;
+    src: url(../Fonts/Iran_Sharp/iransharp_noen.woff2);
+}
+
+@font-face {
+    font-family: iranSharp;
+    src: url(../Fonts/Iran_Sharp/iransharp.woff2);
+}
+
+@font-face {
+    font-family: yekanBakh;
+    src: url(../Fonts/Iran_YekanBakh/YekanBakh-Regular.woff);
+}
+
+@font-face {
+    font-family: YekanBakh;
+    src: url(../Fonts/YekanBakh-Regular.woff);
+}
+
+@font-face {
+    font-family: iranYekan;
+    src: url(../Fonts/IRANYekanWebRegular.ttf);
+}
+
+/* Project CSS Start */
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    font-size: 17px;
+    font-family: iranYekan;
+    text-align: center;
+    margin: 0.4rem;
+}
+
+/* Offer Text Before Menu */
+
+.head {
+    width: 100%;
+    height: 85px;
+    display: flex;
+    border-radius: 10px;
+    background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
+    position: relative;
+    justify-content: center;
+    align-content: center;
+
+}
+
+
+.head-text {
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+}
+
+#offer-pic {
+    position: absolute;
+    left: 0;
+    width: 6%;
+    height: 80px;
+    transition: 0.7s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.head:hover {
+    color: #f9f9f9;
+
+}
+
+.head:hover #offer-pic {
+    transform: scale(1.1) rotate(356deg);
+    visibility: visible;
+    left: 30%;
+    opacity: 1;
+}
+
+
+.header-img {
+    border-radius: 0.5rem;
+}
+
+.mobile__header__carousel {
+    display: none;
+}
+
+/* Main */
+
+/* Sample */
+
+.samples {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+    max-width: 90%;
+}
+
+.sample_item {
+    display: flex;
+    width: 14.5rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    border-bottom: 0.1rem solid silver;
+}
+
+.sample_item_img {
+    width: 100%;
+}
+
+.sample_item_text {
+    font-family: E-font-Arciform;
+}
+
+.delete-btn {
+    display: block;
+    text-decoration: none;
+    background: #ce0000;
+    color: #fff;
+    border-radius: 980px;
+    text-align: center;
+    padding: 0.4rem;
+    margin: 0 auto 0.5rem auto;
+    width: 9rem;
+    cursor: pointer;
+    display: none;
+}
+
+.sample_item_link {
+    cursor: pointer;
+    text-decoration: none;
+    background: #0071e3;
+    color: #fff;
+    border-radius: 980px;
+    text-align: center;
+    padding: 0.4rem;
+}
+
+.Poster {
+    margin-top: 2rem;
+    width: 98%;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+
+}
+
+.phon_Color {
+    width: 104px;
+    height: 14px;
+}
+
+/* Footer */
+
+.Newsletter {
+    background-color: rgba(22, 22, 23, 0.8);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom: 1px solid rgb(85, 83, 83);
+    padding: 3rem 0;
+}
+
+.Newsletter__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__h3 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.Newsletter-btn {
+    background-color: #2f5bea;
+    border: none;
+    outline: none;
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Newsletter__search__container {
+    display: flex;
+    flex-basis: 20rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+}
+
+.Newsletter__input {
+    border: none;
+    outline: none;
+}
+
+/* Copy_Right */
+.copy_Right {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-family: E-font-Arciform;
+    background-color: rgba(22, 22, 23, 0.8);
+    text-align: center;
+    padding: 0 3rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    width: 100%;
+    height: 50px;
+}
+
+.copy__right__text {
+    text-align: center;
+
+}
+
+/* Hovers */
+
+.Poster:hover {
+    transform: scale(1.03);
+    opacity: 0.95;
+}
+
+/* Responsive Part */
+
+
+@media only screen and (max-width:1200px) {}
+
+@media only screen and (max-width: 992px) {
+    #offer-pic {
+        display: none;
+    }
+
+    .sample_item {
+        width: 50%;
+        padding: 1rem;
+        border-bottom: none;
+    }
+
+    .user__icon i {
+        padding: 0.1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .sample_item {
+        width: 100%;
+        padding: 1rem;
+        border-bottom: none;
+    }
+
+    .head {
+        display: none;
+    }
+
+    .copy_Right {
+        display: none;
+    }
+
+    .Newsletter__container {
+        flex-direction: column;
+    }
+
+    .Newsletter__search__container {
+        flex-basis: auto;
+    }
+
+    .header__carousel {
+        display: none;
+    }
+
+    .mobile__header__carousel {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 576px) {}

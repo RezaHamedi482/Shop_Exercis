@@ -1,0 +1,97 @@
+@font-face {
+    font-family: ABC;
+    src: url(../Fonts/English/Arciform.otf);
+}
+
+.mycontainer {
+    margin: 10px auto;
+    text-align: center;
+    background-color: rgba(22, 22, 23, 0.8);
+    border-radius: 0.5rem;
+    z-index: 1;
+    padding: 1rem 0;
+}
+
+.brand_font {
+    font-family: ABC;
+    color: #f5f5f5;
+    text-align: center;
+}
+
+.user__icon {
+    display: flex;
+    text-align: center;
+}
+
+.user__icon a i {
+    display: block;
+    color: rgb(140, 140, 140);
+}
+
+.user__icon a {
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+ul {
+    text-align: right;
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 0px;
+
+}
+
+.menu:first-child {
+    margin-top: 0.5rem;
+}
+
+.menu li {
+    float: right;
+    padding: 0.5rem 1em;
+    border: 1px solid #eee;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin: 1px;
+    box-sizing: unset;
+}
+
+.menu li:hover {
+    background-color: rgba(20, 32, 81, 0.3);
+    color: #fff;
+}
+
+li ul {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    z-index: 1;
+    width: 150px;
+    display: none;
+    opacity: 0;
+    box-sizing: unset;
+}
+
+li ul li {
+    width: 100%;
+}
+
+li:hover ul {
+    display: block;
+    opacity: 1;
+}
+
+li.submenu::after {
+    content: "\25bc";
+    font-size: 0.6em;
+    padding-right: 2px;
+}
+
+li.submenu:hover::after {
+    content: "\25b2";
+    font-size: 0.6em;
+    padding-right: 2px;
+}
